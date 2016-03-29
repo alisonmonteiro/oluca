@@ -28,8 +28,7 @@ Route::group(['prefix' => 'admin'], function () {
         }]);
 
         // Users
-        Route::get('/users', ['as' => 'users.index', 'uses' => 'UsersController@getIndex']);
-        Route::get('/users/create', ['as' => 'users.create', 'uses' => 'UsersController@getCreate']);
+        Route::resource('users', 'UsersController');
 
         // Institutions
         Route::get('/institutions', ['as' => 'institutions.index', 'uses' => 'UsersController@getIndex']);

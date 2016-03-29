@@ -20,7 +20,7 @@ class UsersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getIndex()
+    public function index()
     {
         $users = $this->model->select()->get();
 
