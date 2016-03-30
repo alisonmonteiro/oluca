@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+    <a href="{{ route('admin.users.create') }}">Create</a>
     <table class="table" border="1">
         <thead>
             <tr>
